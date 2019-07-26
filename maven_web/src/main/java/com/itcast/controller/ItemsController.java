@@ -19,6 +19,7 @@ public class ItemsController {
     public String findDetail(Model model){
         Items items = itemsService.findById(1);
         model.addAttribute("item", items);
+        System.out.println("hello world");
         return "itemDetail";
     }
 }
